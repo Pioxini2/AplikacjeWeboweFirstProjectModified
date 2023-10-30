@@ -43,6 +43,7 @@ class Home extends Component {
       </Container>
     );
   }
+  
 }
 
 export default Home;

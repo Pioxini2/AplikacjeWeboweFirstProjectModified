@@ -4,7 +4,7 @@ from django.db import migrations
 
 def create_data(apps, schema_editor):
     Data = apps.get_model('data', 'Data')
-    Data(data="Example data").save()
+    Data(data="Example data", amount=100.0).save()  # Add the "amount" value
 
 class Migration(migrations.Migration):
 
@@ -13,5 +13,5 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-    	migrations.RunPython(create_data),
+        migrations.RunPython(create_data),
     ]

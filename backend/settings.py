@@ -8,9 +8,15 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
+
+Piotr Gierba 4pT
 """
 
 import os
+
+# settings.py
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
